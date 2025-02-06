@@ -4,8 +4,8 @@ function stringChop(str, size) {
 		return [];
 	}
 	let result = [];
-	for(let i = 0; i<str.length; i+= size){
-		result.push(str.substring(i,i+size));
+	for(let i = 0; i<str.length; i= i+ size){
+		 result = result.concat(str.substring(i, i + size));
 	}
 	return result;
 }
