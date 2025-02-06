@@ -3,11 +3,12 @@ function stringChop(str, size) {
 	if (!str) {
 		return [];
 	}
-	let result = [];
+	let chunks = [];
 	for(let i = 0; i<str.length; i= i+ size){
-		 result = result.concat(str.substring(i, i + size));
+		chunks.push(str.slice(i, i+size));
+		 
 	}
-	return result;
+	return chunks;
 }
 
 // Do not change the code below
